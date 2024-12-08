@@ -1,0 +1,237 @@
+[gd_scene load_steps=18 format=3 uid="uid://glbwovgcv882"]
+
+[ext_resource type="Script" path="res://ButtonSound.gd" id="1_7ncue"]
+[ext_resource type="Texture2D" uid="uid://bajugxmc3lsn5" path="res://assets/1349325.png" id="1_wkfrh"]
+[ext_resource type="AudioStream" uid="uid://d21qayija0mss" path="res://assets/Sounds/bell_ding.ogg" id="1_wrtar"]
+[ext_resource type="AudioStream" uid="uid://2hr1hpch4xct" path="res://assets/Sounds/song.ogg" id="3_m71sm"]
+[ext_resource type="AudioStream" uid="uid://csa3l211gtwgb" path="res://assets/Sounds/gunshot-37055.mp3" id="4_rkni7"]
+[ext_resource type="AudioStream" uid="uid://ce3cgy0popti2" path="res://assets/Sounds/ambient-piano-logo-165357.mp3" id="5_00yq1"]
+[ext_resource type="AudioStream" uid="uid://dr316pr8fa1sx" path="res://assets/Sounds/boom-geomorphism-cinematic-trailer-sound-effects-123876.mp3" id="6_lr3sj"]
+[ext_resource type="AudioStream" uid="uid://jxb1mgfmuq7y" path="res://assets/Sounds/large-underwater-explosion-190270.mp3" id="7_tytyn"]
+[ext_resource type="AudioStream" uid="uid://d3ygso33evxky" path="res://assets/Sounds/morphed-metal-discharged-cinematic-trailer-sound-effects-124763.mp3" id="8_l1r1g"]
+[ext_resource type="AudioStream" uid="uid://b5ulihurifm76" path="res://assets/Sounds/splat2ogg-14668.mp3" id="9_fha0k"]
+[ext_resource type="AudioStream" uid="uid://wed3tksoxecs" path="res://assets/Sounds/notification-2-269292.mp3" id="10_dpkxj"]
+[ext_resource type="AudioStream" uid="uid://tqueoioox6tr" path="res://assets/Sounds/shine-11-268907.mp3" id="11_u1o46"]
+[ext_resource type="AudioStream" uid="uid://copnnqhnmhvxu" path="res://assets/Sounds/traimory-mega-horn-angry-siren-f-cinematic-trailer-sound-effects-193408.mp3" id="12_hgpyl"]
+[ext_resource type="AudioStream" uid="uid://bip5ujjqrek7m" path="res://assets/Sounds/whisper-trail-2ogg-14429.mp3" id="13_ngw0v"]
+[ext_resource type="AudioStream" uid="uid://q6e3q26cbm0v" path="res://assets/Sounds/whoosh-motion-243505.mp3" id="14_xx1uy"]
+[ext_resource type="Script" path="res://assets/VolumeSlider.gd" id="15_1nlaq"]
+[ext_resource type="Script" path="res://assets/stopsound.gd" id="16_yx7gk"]
+
+[node name="ArrowHero" type="Node2D"]
+
+[node name="1349325" type="Sprite2D" parent="."]
+position = Vector2(964.5, 542)
+scale = Vector2(0.381883, 0.321987)
+texture = ExtResource("1_wkfrh")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 44.0
+offset_top = 53.0
+offset_right = 329.0
+offset_bottom = 143.0
+text = "Bell"
+script = ExtResource("1_7ncue")
+sound = ExtResource("1_wrtar")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 2.54737
+anchor_top = 9.41111
+anchor_right = 2.54737
+anchor_bottom = 9.41111
+offset_left = 814.0
+offset_top = 953.0
+offset_right = 1099.0
+offset_bottom = 1043.0
+text = "Music"
+script = ExtResource("1_7ncue")
+sound = ExtResource("3_m71sm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 46.0
+offset_top = 187.0
+offset_right = 331.0
+offset_bottom = 277.0
+text = "Gunshot"
+script = ExtResource("1_7ncue")
+sound = ExtResource("4_rkni7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 45.0
+offset_top = 307.0
+offset_right = 330.0
+offset_bottom = 397.0
+text = "Piano"
+script = ExtResource("1_7ncue")
+sound = ExtResource("5_00yq1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 45.0
+offset_top = 436.0
+offset_right = 330.0
+offset_bottom = 526.0
+text = "Cinematic Boom"
+script = ExtResource("1_7ncue")
+sound = ExtResource("6_lr3sj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 45.0
+offset_top = 562.0
+offset_right = 330.0
+offset_bottom = 652.0
+text = "Underwater Explosion"
+script = ExtResource("1_7ncue")
+sound = ExtResource("7_tytyn")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 43.0
+offset_top = 700.0
+offset_right = 328.0
+offset_bottom = 790.0
+text = "Morphed Metal"
+script = ExtResource("1_7ncue")
+sound = ExtResource("8_l1r1g")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.27368
+anchor_top = -7.47778
+anchor_right = 5.27368
+anchor_bottom = -7.47778
+offset_left = 1590.0
+offset_top = 80.0
+offset_right = 1875.0
+offset_bottom = 170.0
+text = "Splat"
+script = ExtResource("1_7ncue")
+sound = ExtResource("9_fha0k")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.26667
+anchor_top = -7.53333
+anchor_right = 5.26667
+anchor_bottom = -7.53333
+offset_left = 1590.0
+offset_top = 209.0
+offset_right = 1875.0
+offset_bottom = 299.0
+text = "Notification"
+script = ExtResource("1_7ncue")
+sound = ExtResource("10_dpkxj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button10" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.26667
+anchor_top = -7.53333
+anchor_right = 5.26667
+anchor_bottom = -7.53333
+offset_left = 1589.0
+offset_top = 329.0
+offset_right = 1874.0
+offset_bottom = 419.0
+text = "Sparkle Shine"
+script = ExtResource("1_7ncue")
+sound = ExtResource("11_u1o46")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button11" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.26667
+anchor_top = -7.53333
+anchor_right = 5.26667
+anchor_bottom = -7.53333
+offset_left = 1589.0
+offset_top = 458.0
+offset_right = 1874.0
+offset_bottom = 548.0
+text = "MEGA BONKERS HORN"
+script = ExtResource("1_7ncue")
+sound = ExtResource("12_hgpyl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button12" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.26667
+anchor_top = -7.53333
+anchor_right = 5.26667
+anchor_bottom = -7.53333
+offset_left = 1589.0
+offset_top = 584.0
+offset_right = 1874.0
+offset_bottom = 674.0
+text = "Whisper"
+script = ExtResource("1_7ncue")
+sound = ExtResource("13_ngw0v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button13" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 5.26667
+anchor_top = -7.53333
+anchor_right = 5.26667
+anchor_bottom = -7.53333
+offset_left = 1587.0
+offset_top = 722.0
+offset_right = 1872.0
+offset_bottom = 812.0
+text = "Whoosh"
+script = ExtResource("1_7ncue")
+sound = ExtResource("14_xx1uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 508.0
+offset_top = 266.0
+offset_right = 1422.0
+offset_bottom = 595.0
+script = ExtResource("15_1nlaq")
+
+[node name="Button14" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.147368
+anchor_top = 0.9
+anchor_right = -0.147368
+anchor_bottom = 0.9
+offset_left = 812.0
+offset_top = 831.0
+offset_right = 1097.0
+offset_bottom = 921.0
+text = "Stop Sound"
+script = ExtResource("16_yx7gk")
+metadata/_edit_use_anchors_ = true
